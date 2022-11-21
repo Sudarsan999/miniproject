@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#rollover").click(function(){
+$("#dashboard").slideUp("slow");
+
+});
+});
+$(document).ready(function(){
+$("#rollback").click(function(){
+
+$("#dashboard").slideDown("slow");
+});
+});
+</script>
+<style>
+body{
+margin: 0;
+}
+#dashboard,#rollover,#rollback{
+padding: 20px;
+color: white;
+text-align: center;
+background-color: cadetblue;
+}
+#dashboard{
+font-size: xx-large;
+padding: 100px;
+border: 2px solid rgb(72,190,194);
+}
+</style>
+<body>
+
+<div id="rollover">Roll Me Over</div>
+<div id="dashboard">Hello World! I'm Sliding</div>
+<div id="rollback">Roll Me Back</div>
+</body>
+</html>
